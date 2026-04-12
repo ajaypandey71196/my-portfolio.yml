@@ -6,18 +6,30 @@ on:
   pull_request:
     branches: master
 
+# Added permissions for security best practices
+permissions:
+  contents: read
+
 jobs:
   build-and-check:
     runs-on: ubuntu-latest
+    env:
+      # Opt into Node 24 early to clear that warning
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Check HTML Syntax
+      - name: Validate Files
         run: |
-          # A simple check to ensure index.html exists and is readable
-          [ -f index.html ] && echo "index.html exists" || exit 1
+          echo "Checking for essential portfolio files..."
+          [ -f index.html ] || { echo "index.html missing"; exit 1; }
+          [ -f styles.css ] || { echo "styles.css missing"; exit 1; }
+          echo "All core files present."
 
-      - name: Security Scan (Optional)
-        uses: stackhawk/hawkscan-action@v2.1.3
-        continue-on-error: true # Just for show on a portfolio
+      - name: HTML Hint (Linting)
+        run: |
+          # This installs a basic HTML linter to check for syntax errors
+          npm install -g htmlhint
+          htmlhint index.html
