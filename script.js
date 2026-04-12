@@ -99,7 +99,7 @@ if (contactForm) {
     // Create mailto link
     const subject = encodeURIComponent(`Contact from ${name}`);
     const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
-    const mailtoLink = `mailto:prajjwal.singhpratap@gmail.com?subject=${subject}&body=${body}`;
+    const mailtoLink = `mailto:ajay.pandey71196@gmail.com?subject=${subject}&body=${body}`;
 
     window.location.href = mailtoLink;
     showFormMessage("Opening email client...", "success");
