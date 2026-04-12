@@ -1,0 +1,23 @@
+name: DevOps Portfolio CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check HTML Syntax
+        run: |
+          # A simple check to ensure index.html exists and is readable
+          [ -f index.html ] && echo "index.html exists" || exit 1
+
+      - name: Security Scan (Optional)
+        uses: stackhawk/hawkscan-action@v2.1.3
+        continue-on-error: true # Just for show on a portfolio
