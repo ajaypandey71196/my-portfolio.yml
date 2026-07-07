@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ajay Pandey | DevOps Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Portfolio of Ajay Pandey, DevOps Engineer specializing in AWS, Jenkins, Docker, Kubernetes, Terraform, CI/CD and automation."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Ambient background -->
+  <div class="ambient">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+    <div class="ambient-blob blob-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <header>
+    <div class="nav-inner">
+      <a href="#top" class="logo">
+        <div class="logo-badge">
+          <span>AP</span>
+        </div>
+        <div>
+          <div class="logo-text-main">Ajay Pandey</div>
+          <div class="logo-text-sub">DevOps · Cloud · Automation</div>
+        </div>
+      </a>
+      <nav>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#certifications">Certifications</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-btn nav-btn-resume" href="assets/Ajay_Pandey_DevOps_Resume.pdf" download>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+          <span>Resume</span>
+        </a>
+        <button
+          class="nav-btn"
+          onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"
+        >
+          <span class="nav-btn-dot"></span>
+          <span>Open to Work</span>
+        </button>
+      </nav>
+
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="mobile-nav-menu" id="mobileMenu">
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#skills">Skills</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#certifications">Certifications</a>
+      <a class="nav-link" href="#experience">Experience</a>
+      <a class="nav-link" href="#contact">Contact</a>
+      <a class="nav-link nav-link-resume" href="assets/Ajay_Pandey_DevOps_Resume.pdf" download>Download Resume ↓</a>
+    </div>
+  </header>
+
+  <main class="page">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="hero-left">
+        <div class="pill">
+          <div class="pill-dot">
+            <span></span>
+          </div>
+          DevOps Engineer · AWS & GCP · CI/CD · Docker · Kubernetes · IaC
+        </div>
+        <h1 class="hero-title">
+          Building reliable bridges
+          <span class="gradient-text">from code to production.</span>
+        </h1>
+        <p class="hero-subtitle">
+          I'm
+          <span class="hero-subtitle-strong">Ajay Pandey</span>, a
+          DevOps Engineer with 5 years of IT experience and 2.5+ years automating
+          <span class="hero-subtitle-strong">AWS & GCP cloud infrastructure, CI/CD pipelines, Docker, and Kubernetes</span>
+          — delivering 40% faster releases, 60% faster provisioning, and 30% faster incident response in production.
+        </p>
+        <div class="hero-cta">
+          <button
+            class="btn-primary"
+            onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})"
+          >
+            <span>View Projects</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </button>
+          <button
+            class="btn-ghost"
+            onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"
+          >
+            <span>Contact Me</span>
+          </button>
+          <a class="btn-ghost" href="assets/Ajay_Pandey_DevOps_Resume.pdf" download>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+            <span>Download Resume</span>
+          </a>
+        </div>
+        <div class="hero-meta">
+          <div class="hero-meta-item">
+            <span class="hero-meta-dot"></span>
+            <span>Open to DevOps / Cloud roles</span>
+          </div>
+          <div class="hero-meta-item">
+            <span class="hero-meta-dot"></span>
+            <span>India · Remote / Hybrid</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-card">
+          <div class="hero-card-ribbon">DevOps · Cloud · CI/CD</div>
+          <div class="hero-card-inner">
+            <div class="hero-card-header">
+              <div class="hero-avatar" id="avatarUpload" title="Click to preview a profile photo on this browser (see the editing guide to make it permanent for all visitors)">
+                <img src="profile.jpg" alt="Ajay Pandey" id="avatarImg" onerror="this.style.display='none'">
+                <span class="avatar-fallback" id="avatarFallback">AP</span>
+                <div class="avatar-edit-overlay">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
+                </div>
+                <input type="file" id="avatarInput" accept="image/*" hidden />
+              </div>
+              <div class="hero-card-text">
+                <div class="hero-card-name">Ajay Pandey</div>
+                <div class="hero-card-role">DevOps Engineer</div>
+                <div class="hero-card-tags">
+                  <span class="tag tag-highlight">AWS</span>
+                  <span class="tag tag-highlight">Jenkins</span>
+                  <span class="tag">Docker</span>
+                  <span class="tag">Kubernetes</span>
+                  <span class="tag">Terraform</span>
+                  <span class="tag">Bash</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-card-footer">
+              <div class="mini-stat">
+                <div class="mini-stat-label">IT Experience</div>
+                <div class="mini-stat-value">5 yrs</div>
+              </div>
+              <div class="mini-stat">
+                <div class="mini-stat-label">Cloud & DevOps</div>
+                <div class="mini-stat-value">2.5+ yrs</div>
+              </div>
+              <div class="mini-stat">
+                <div class="mini-stat-label">Location</div>
+                <div class="mini-stat-value">Gurugram 🇮🇳</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="section-header">
+        <div>
+          <div class="section-eyebrow">Introduction</div>
+          <h2 class="section-title">About <span>Me</span></h2>
+        </div>
+        <p class="section-subtitle">
+          A quick intro to who I am and how I solve infrastructure challenges.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <div class="about-main">
+          <p class="about-text-main">
+            I'm a <strong>DevOps Engineer</strong> with 5 years of IT experience and 2.5+ years focused on cloud infrastructure automation, CI/CD pipeline design, and containerisation. I've delivered <strong>40% faster releases, 60% faster provisioning, and a 30% reduction in incident response time</strong> across production environments — including a cloud migration from AWS to GCP that cut costs by 30%.
+          </p>
+          <p class="about-text-main">
+            I work mainly with <strong>AWS, GCP, Jenkins, Docker, Kubernetes, Terraform, and Git</strong>, with observability via <strong>Prometheus, Grafana, and Loki</strong>. I'm currently expanding my expertise in Kubernetes and Terraform IaC, and I care about reliability, security hardening, and smooth cross-team delivery.
+          </p>
+
+          <div class="about-highlights">
+            <div class="about-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+              CI/CD pipelines
+            </div>
+            <div class="about-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg>
+              Containers & K8s
+            </div>
+            <div class="about-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              Infrastructure as Code
+            </div>
+            <div class="about-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+              Monitoring & reliability
+            </div>
+          </div>
+        </div>
+
+        <div class="about-side">
+          <div class="about-side-label">Snapshot</div>
+          <div class="about-side-items">
+            <span class="chip chip-accent">AWS · GCP · Jenkins · Docker · Kubernetes · Terraform</span>
+            <span class="chip">Prometheus, Grafana & Loki</span>
+            <span class="chip">Linux, Git, MySQL & MongoDB Atlas</span>
+            <span class="chip">NGINX, Cloudflare WAF & IAM hardening</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="section-header">
+        <div>
+          <div class="section-eyebrow">Capabilities</div>
+          <h2 class="section-title">Tech <span>Stack</span></h2>
+        </div>
+        <p class="section-subtitle">
+          The tools I use to design, build, and ship reliable systems.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-card-icon">☁️</div>
+          <div class="skill-card-title">Cloud Platforms</div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag-strong">AWS</span>
+            <span class="skill-tag skill-tag-strong">GCP</span>
+            <span class="skill-tag">EC2 · S3 · VPC · IAM</span>
+            <span class="skill-tag">ECS · RDS · Route53</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon">🔄</div>
+          <div class="skill-card-title">CI/CD & Automation</div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag-strong">Jenkins</span>
+            <span class="skill-tag">GitHub Actions</span>
+            <span class="skill-tag">AWS CodePipeline</span>
+            <span class="skill-tag">Pipeline as Code</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon">🐳</div>
+          <div class="skill-card-title">Containers & Orchestration</div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag-strong">Docker</span>
+            <span class="skill-tag skill-tag-strong">Kubernetes</span>
+            <span class="skill-tag">Helm · ArgoCD</span>
+            <span class="skill-tag">ECR · Docker Hub</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon">🏗️</div>
+          <div class="skill-card-title">Infrastructure as Code</div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag-strong">Terraform</span>
+            <span class="skill-tag">Provisioning & automation</span>
+            <span class="skill-tag">Multi-env setups</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon">📈</div>
+          <div class="skill-card-title">Monitoring & Observability</div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag-strong">Prometheus</span>
+            <span class="skill-tag skill-tag-strong">Grafana</span>
+            <span class="skill-tag">Loki</span>
+            <span class="skill-tag">CloudWatch</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon">🛡️</div>
+          <div class="skill-card-title">Security & Networking</div>
+          <div class="skill-tags">
+            <span class="skill-tag">IAM least-privilege</span>
+            <span class="skill-tag">NGINX hardening</span>
+            <span class="skill-tag">Cloudflare WAF</span>
+            <span class="skill-tag">HTTPS/SSL</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon">🗄️</div>
+          <div class="skill-card-title">Databases & OS</div>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">MongoDB Atlas</span>
+            <span class="skill-tag">Linux (RHEL/Ubuntu/Debian)</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon">🤝</div>
+          <div class="skill-card-title">Scripting & Collaboration</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Bash</span>
+            <span class="skill-tag">Git · GitHub · Bitbucket</span>
+            <span class="skill-tag">RCA & L2/L3 support</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="section-header">
+        <div>
+          <div class="section-eyebrow">Selected Work</div>
+          <h2 class="section-title">DevOps <span>Projects</span></h2>
+        </div>
+        <p class="section-subtitle">
+          Practical, interview-ready projects that reflect how I work.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-badge">SaaS · AWS → GCP · Jenkins · NGINX</div>
+          <h3 class="project-title">
+            Webydo — DevOps for a Multi-Server SaaS Web Platform
+          </h3>
+          <p class="project-desc">
+            Owned DevOps for a .NET and JavaScript SaaS platform running 10+ servers across Linux, Windows, and media environments, keeping <strong>99%+ availability</strong>. Designed Jenkins CI/CD pipelines that cut manual deployment time by <strong>75%</strong>, and led the cloud migration from AWS to GCP, reducing cloud costs by <strong>30%</strong>.
+          </p>
+          <div class="project-meta">
+            <span>AWS</span>
+            <span>GCP</span>
+            <span>Jenkins</span>
+            <span>NGINX</span>
+            <span>MySQL</span>
+          </div>
+          <div class="project-footer">
+            <a
+              class="project-link"
+              href="https://github.com/ajaypandey71196"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>View GitHub</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+            </a>
+            <span>Oodles Technology client project</span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-badge">Kubernetes · Docker · Observability</div>
+          <h3 class="project-title">
+            HedgeX — Crypto Trading Platform Infrastructure
+          </h3>
+          <p class="project-desc">
+            Administered <strong>20+ Dockerised microservices</strong> for a live crypto trading platform, deploying on Kubernetes with auto-scaling. Built full-stack observability with Prometheus, Grafana, CloudWatch, and centralised Loki logging — maintaining <strong>99.9%+ uptime</strong> and cutting mean-time-to-diagnose by <strong>45%</strong>.
+          </p>
+          <div class="project-meta">
+            <span>Kubernetes</span>
+            <span>Docker</span>
+            <span>Prometheus</span>
+            <span>Grafana</span>
+            <span>MongoDB</span>
+          </div>
+          <div class="project-footer">
+            <a
+              class="project-link"
+              href="https://github.com/ajaypandey71196"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>View GitHub</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+            </a>
+            <span>Oodles Technology client project</span>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-badge">IAM · Security · Multi-Team Support</div>
+          <h3 class="project-title">
+            Adda247 — Secure Multi-Team Cloud Platform Support
+          </h3>
+          <p class="project-desc">
+            Managed AWS IAM, VPC, EC2, and S3 access for <strong>5+ product teams</strong>, deployed Dockerised apps via Jenkins CI/CD, and monitored Linux server health with CloudWatch and Bash — maintaining <strong>99.5%+ server uptime</strong> while standardising Git branching across teams.
+          </p>
+          <div class="project-meta">
+            <span>AWS IAM</span>
+            <span>Docker</span>
+            <span>Jenkins</span>
+            <span>Bash</span>
+            <span>CloudWatch</span>
+          </div>
+          <div class="project-footer">
+            <a
+              class="project-link"
+              href="https://github.com/ajaypandey71196"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>View GitHub</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+            </a>
+            <span>Adda247 · Assistant Consultant</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications">
+      <div class="section-header">
+        <div>
+          <div class="section-eyebrow">Credentials</div>
+          <h2 class="section-title">Certifications <span>& Learning</span></h2>
+        </div>
+        <p class="section-subtitle">
+          Continuous learning and professional certifications.
+        </p>
+      </div>
+
+      <div class="certifications-grid">
+        <div class="cert-card">
+          <div class="cert-icon">☁️</div>
+          <div class="cert-content">
+            <h3 class="cert-title">Getting Started with Serverless</h3>
+            <p class="cert-desc">AWS Educate — Amazon Web Services</p>
+          </div>
+          <span class="cert-badge">Oct 2025</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">🤖</div>
+          <div class="cert-content">
+            <h3 class="cert-title">Machine Learning Foundations</h3>
+            <p class="cert-desc">AWS Educate — Amazon Web Services</p>
+          </div>
+          <span class="cert-badge">2025</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">🖥️</div>
+          <div class="cert-content">
+            <h3 class="cert-title">JCHNE+ Certification</h3>
+            <p class="cert-desc">Jetking Infotrain — Hardware & Networking</p>
+          </div>
+          <span class="cert-badge">Completed</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <div class="section-header">
+        <div>
+          <div class="section-eyebrow">Career</div>
+          <h2 class="section-title">Experience</h2>
+        </div>
+        <p class="section-subtitle">
+          How I've applied DevOps skills in real-world environments.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-heading">
+            <div class="timeline-role">Associate DevOps Engineer</div>
+            <div class="timeline-meta">Oodles Technology, Gurugram · Jun 2023 – Jun 2025</div>
+            <div class="badge-outline">Webydo (Tel Aviv) & HedgeX (Dubai) client projects</div>
+          </div>
+          <ul class="timeline-points">
+            <li>Managed DevOps for a .NET/JS SaaS platform across <strong>10+ servers</strong>, ensuring 99%+ availability, and designed <strong>Jenkins</strong> CI/CD pipelines that cut deployment time by 75%.</li>
+            <li>Led a cloud migration from <strong>AWS to GCP</strong>, reducing cloud costs by 30% while improving workload performance.</li>
+            <li>Administered <strong>20+ Dockerised microservices</strong> on a crypto trading platform, deploying on <strong>Kubernetes</strong> with auto-scaling and zero-downtime releases.</li>
+            <li>Built full-stack observability with <strong>Prometheus, Grafana, CloudWatch</strong>, and centralised <strong>Loki</strong> logging, cutting mean-time-to-diagnose by 45%.</li>
+            <li>Hardened security via <strong>NGINX, Cloudflare WAF, HTTPS/SSL</strong>, and IAM least-privilege policies, mitigating DDoS, SQLi, and XSS risks.</li>
+            <li>Administered <strong>MySQL</strong> and <strong>MongoDB Atlas</strong> databases, and provided L2/L3 support with root cause analysis for production incidents.</li>
+          </ul>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-heading">
+            <div class="timeline-role">Assistant Consultant – DevOps</div>
+            <div class="timeline-meta">Adda247, New Delhi · Apr 2022 – Jun 2023</div>
+            <div class="badge-outline">Cloud access & delivery standards across 5+ teams</div>
+          </div>
+          <ul class="timeline-points">
+            <li>Managed <strong>AWS</strong> IAM, VPC, EC2, and S3 to support 5+ product teams with secure access control and infrastructure provisioning.</li>
+            <li>Deployed Dockerised applications through <strong>Jenkins</strong> CI/CD pipelines, improving release consistency across environments.</li>
+            <li>Monitored Linux server health (CPU, disk, RAM) with <strong>CloudWatch</strong> and Bash scripting, maintaining 99.5%+ uptime.</li>
+            <li>Established deployment standards and <strong>Git</strong> branching strategies with development teams, reducing environment drift.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="section-header">
+        <div>
+          <div class="section-eyebrow">Get in Touch</div>
+          <h2 class="section-title">Contact</h2>
+        </div>
+        <p class="section-subtitle">
+          Reach out for DevOps, Cloud, or platform engineering opportunities.
+        </p>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-card contact-info">
+          <div class="contact-row">
+            <div class="label">Email</div>
+            <div class="value copy-email">ajay.pandey71196@gmail.com</div>
+            <span class="copy-hint">Click to copy</span>
+          </div>
+          <div class="contact-row">
+            <div class="label">Location</div>
+            <div class="value">India · Open to remote & hybrid roles</div>
+          </div>
+          <div class="contact-row">
+            <div class="label">Status</div>
+            <div class="value">Actively exploring DevOps / Cloud roles</div>
+          </div>
+
+          <div class="contact-actions">
+            <a
+              class="social-btn"
+              href="https://github.com/ajaypandey71196"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a
+              class="social-btn"
+              href="https://www.linkedin.com/in/iamajaypandey/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <form
+            action="mailto:ajay.pandey71196@gmail.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <div class="form-row">
+              <label>
+                <span>Name</span>
+                <input type="text" name="name" placeholder="Your name" required />
+              </label>
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" placeholder="you@example.com" required />
+              </label>
+            </div>
+            <label>
+              <span>Message</span>
+              <textarea name="message" placeholder="Share a bit about the role, team, or project…" required></textarea>
+            </label>
+            <button type="submit" class="btn-primary" style="width: 100%; margin-top: 6px; justify-content: center;">
+              <span>Send message</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" x2="11" y1="2" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <div class="form-note">
+              This form uses your default email client. You can also copy my email directly.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>© <span id="year"></span> · Ajay Pandey</div>
+    <div class="footer-right">
+      <span>Built with a DevOps mindset: simple, reliable, fast.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
