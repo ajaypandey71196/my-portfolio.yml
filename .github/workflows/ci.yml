@@ -1,0 +1,35 @@
+name: DevOps Portfolio CI
+
+on:
+  push:
+    branches: master
+  pull_request:
+    branches: master
+
+# Added permissions for security best practices
+permissions:
+  contents: read
+
+jobs:
+  build-and-check:
+    runs-on: ubuntu-latest
+    env:
+      # Opt into Node 24 early to clear that warning
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Validate Files
+        run: |
+          echo "Checking for essential portfolio files..."
+          [ -f index.html ] || { echo "index.html missing"; exit 1; }
+          [ -f styles.css ] || { echo "styles.css missing"; exit 1; }
+          echo "All core files present."
+
+      - name: HTML Hint (Linting)
+        run: |
+          # This installs a basic HTML linter to check for syntax errors
+          npm install -g htmlhint
+          htmlhint index.html
